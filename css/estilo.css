@@ -11,20 +11,34 @@ h1{
     margin: 10px 10px;
     padding: 12px;
     border-radius: 15px;
-    animation: infinite;
+    animation: infinite linear;
     animation-duration: 1350ms;
     animation-name: doido;
 }
 
-div{
+section > div{
+    background-color: green;
+    height: 50px;
+    width: 150px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+button{
+    width: 140px;
+    height: 40px;
+    margin: 5px;
+}
+
+.vid{
     color: rgba(255, 255, 255, 0.815);
     background-color: blue;
     padding: 10px;
     border-radius: 12px;
     width: 130px;
     margin: auto;
-    margin-top: 350px;
-    animation: infinite;
+    margin-top: 100px;
+    animation: infinite linear;
     animation-duration: 1.75s;
     animation-name: vai;
 }
@@ -37,49 +51,22 @@ a{
 @keyframes vai {
 
     0%{
-        background-color: yellow;
+        background-color: green;
         transform: rotate(0deg);
     }
-    10%{
-        background-color: greenyellow;
-        transform: rotate(36deg);
-    }
-    20%{
-        background-color: seagreen;
-        transform: rotate(72deg);
-    }
-    30%{
-        background-color: aqua;
-        transform: rotate(108deg);
-    }
-    40%{
+    
+    33%{
         background-color: blue;
-        transform: rotate(144deg);
+        transform: rotate(120deg);
     }
-        50%{
-            background-color: purple;
-            transform: rotate(180deg);
-        }
-        60%{
-            background-color: violet;
-            transform: rotate(216deg);
-        }
-        70%{
-            background-color: pink;
-            transform: rotate(242deg);
-        }
-        80%{
-            background-color: red;
-            transform: rotate(288deg);
-        }
-        90%{
-            background-color: orangered;
-            transform: rotate(322deg);
-        }
-            100%{
-                background-color: orange;
-                transform: rotate(360deg);
-            }
+    66%{
+        background-color: red;
+        transform: rotate(240deg);
+    }
+    100%{
+        background-color: green;
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes doido {
